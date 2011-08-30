@@ -7,12 +7,12 @@ get_header(); ?>
 			<!-- the loop to get all the page info you want to load -->
 			<?php if(have_posts()) : while(have_posts()) : the_post();?>
 			<?php if($count % 2 == 0) { ?>
-				<span id="cat_post_left">
+				<span class="cat_post_left">
 					<?php the_content();?>
 				</span>
 			<?php } ?>
 			<?php if($count % 2 == 1) { ?>
-				<span id="cat_post_right">
+				<span class="cat_post_right">
 					<?php the_content();?>
 				</span>
 			<?php } ?>

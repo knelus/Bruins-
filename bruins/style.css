@@ -95,18 +95,14 @@ hr
 
 .block_inside
 {
-	min-height: 650px;
+	min-height: 725px;
 	padding-left: 50px;
 	padding-right: 50px;
 }	
 
-.category_footer_post 
+.product
 {
-	float: left;
-	width: 200px;
-	height: 200px;
-	list-style: none;	
-	
+	min-height: 725px;
 }
 
 .alignright
@@ -122,6 +118,34 @@ hr
 .block_inside img
 {
 	margin: 15px;
+}
+
+.cat_post_left 
+{
+	margin-left: -30px;
+	float: left;
+	width: 750px;
+	margin-top: 15px;
+}
+
+.cat_post_left img
+{
+	margin-top: -10px;
+	float: left;
+}
+
+.cat_post_right
+{
+	margin-right: -30px;
+	float: right;
+	width: 750px;
+	margin-top: 15px;
+}
+
+.cat_post_right img
+{
+	margin-top: -10px;
+ 	float: right;
 }
 
 #news
@@ -179,6 +203,49 @@ hr
 		list-style:none;
 }
 
+/*producten pagina css */
+#category_list
+{
+	height: 900px;
+}
+
+.category_footer_post 
+{
+	margin-left: 5px;
+	float: left;
+	width: 160px;
+	height: 200px;
+	list-style: none;	
+	
+}
+
+.category_footer_post img
+{
+	padding-top: 5px;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+}
+
+img.category_icon
+{
+	margin-top: 10px;
+}
+
+.cat_item
+{
+
+}
+
+.cat-item 
+{
+	text-align: center;
+	margin-top: 5px;
+	width: 119px;
+	height: 141px;
+	background-image: url(./images/productbackground2.png);
+}
+
 /*footer part */
 
 #footer
@@ -193,6 +260,7 @@ hr
 {
 	border-spacing: 10px; 
 }
+
 
 
 

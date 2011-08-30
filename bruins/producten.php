@@ -8,7 +8,9 @@ Template Name: Producten
 get_header(); ?>
 <div id="block_content">
 	<div id="content_area" class="block">
-		<div id="category_list">
+
+		<div class="product">
+				<div id="category_list">
 			<?php 
 						// Grab the categories - top level only (depth=1)
 			 $get_cats = wp_list_categories( 'echo=0&title_li=&depth=1&hide_empty=0' );
@@ -17,8 +19,8 @@ get_header(); ?>
 			// Amount of categories (count of items in array)
 			 $results_total = count($cat_array);
 			// How many categories to show per list (round up total divided by 5)
-			 //$cats_per_list = ceil($results_total / 3);
-			 $cats_per_list = 4;
+			 //$cats_per_list = ceil($results_total / 5);
+			 $cats_per_list =4;
 			// Counter number for tagging onto each list
 			 $list_number = 1;
 			// Set the category result counter to zero
@@ -28,7 +30,6 @@ get_header(); ?>
 			 <ul class="category_footer_post" id="cat-col-<?php echo $list_number; ?>">
 			 
 				<?php
-				print_r($cat_array[1]);
 					foreach($cat_array as $category) {
 					$result_number++;
 			 
@@ -46,7 +47,6 @@ get_header(); ?>
 				} ?> 
 				</ul>
 		</div>
-		<div class="block_inside">
 			
 		</div><!-- closing block_inside -->		
 <?php get_footer(); ?>
