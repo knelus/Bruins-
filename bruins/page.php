@@ -8,6 +8,6 @@ get_header(); ?>
 				<?php the_content(); ?>
 			<?php endwhile;?>
 			<?php endif; ?>
-		</div><!-- closing block_inside -->		
+		</div><!-- closing block_inside-->		
 <?php get_footer(); ?>
 
