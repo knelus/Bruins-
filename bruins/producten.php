@@ -8,7 +8,10 @@ Template Name: Producten
 get_header(); ?>
 <div id="block_content">
 	<div id="content_area" class="block">
-
+	<div id="cat_sidebar">
+	<?php echo wp_list_categories( 'echo=0&title_li=&depth=1&hide_empty=0' ); ?>
+	</div>
+	
 		<div class="product">
 				<div id="category_list">
 			<?php 

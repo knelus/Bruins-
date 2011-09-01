@@ -82,7 +82,7 @@ hr
 	margin-top: 40px;
 	height: 3px;
 	background-color: #669ACC;
-	color: ##669ACC;
+	color: #669ACC;
 }
 
 #block_content
@@ -219,7 +219,7 @@ hr
 	
 }
 
-.category_footer_post img
+.product .category_footer_post img
 {
 	padding-top: 5px;
 	margin: 0 auto;
@@ -232,18 +232,16 @@ img.category_icon
 	margin-top: 10px;
 }
 
-.cat_item
-{
-
-}
-
-.cat-item 
+.product .cat-item 
 {
 	text-align: center;
 	margin-top: 5px;
 	width: 119px;
 	height: 141px;
-	background-image: url(./images/productbackground2.png);
+	color: #666;
+	border-color: #666;
+	border-style: groove;
+	border-style: solid;
 }
 
 /*footer part */
