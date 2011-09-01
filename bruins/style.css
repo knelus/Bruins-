@@ -11,6 +11,7 @@ body
 	padding: 0px;
 	background-color: #EAEAEA;
 	font-family: Arial;
+	font-size: 11pt;
 	width: 830px;	
 	margin: 0 auto;	
 	background-image: url("images/background.png");
@@ -25,11 +26,17 @@ body
 	width: 830px;	
 }
 
-table
+#footer table
 {
 	padding-left: 50px;
 	font-family: Arial;
-	font-size: 12px;
+	font-size: 8pt;
+}
+
+p
+{
+	font-family: Times, Arial, Helvetica ;
+	font-size: 11pt;
 }
 
 
@@ -100,6 +107,11 @@ hr
 	padding-right: 50px;
 }	
 
+.the_loop p:first-child
+{
+	margin-top: 10px;
+}
+
 .product
 {
 	min-height: 725px;
@@ -118,34 +130,6 @@ hr
 .block_inside img
 {
 	margin: 15px;
-}
-
-.cat_post_left 
-{
-	margin-left: -30px;
-	float: left;
-	width: 750px;
-	margin-top: 15px;
-}
-
-.cat_post_left img
-{
-	margin-top: -10px;
-	float: left;
-}
-
-.cat_post_right
-{
-	margin-right: -30px;
-	float: right;
-	width: 750px;
-	margin-top: 15px;
-}
-
-.cat_post_right img
-{
-	margin-top: -10px;
- 	float: right;
 }
 
 #news
@@ -204,6 +188,36 @@ hr
 }
 
 /*producten pagina css */
+
+.cat_post_left 
+{
+	margin-left: -30px;
+	float: left;
+	width: 750px;
+	margin-top: 15px;
+}
+
+.cat_post_left img
+{
+	margin-top: -10px;
+	float: left;
+	border: none;
+}
+
+.cat_post_right
+{
+	margin-right: -30px;
+	float: right;
+	width: 750px;
+	margin-top: 15px;
+}
+
+.cat_post_right img
+{
+	margin-top: -10px;
+ 	float: right;
+}
+
 #category_list
 {
 	height: 900px;
@@ -211,7 +225,6 @@ hr
 
 .category_footer_post 
 {
-	margin-left: 5px;
 	float: left;
 	width: 160px;
 	height: 200px;
@@ -225,6 +238,7 @@ hr
 	margin: 0 auto;
 	width: 100px;
 	height: 100px;
+	border:none;
 }
 
 img.category_icon
@@ -239,9 +253,67 @@ img.category_icon
 	width: 119px;
 	height: 141px;
 	color: #666;
-	border-color: #666;
+	border-color: #669ACC;
 	border-style: groove;
 	border-style: solid;
+	border-radius: 4px;
+}
+
+.product .cat-item:hover
+{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#cat_sidebar
+{
+	background-color: white;
+	width: 150px;
+	min-height: 100px;
+	margin-top: 40px;
+	float:left;
+	margin-left: -125px;
+	list-style-image: url("./images/list_style.png");
+	border-radius: 4px;
+	-webkit-box-shadow: 4px 4px 10px rgba(0,0,0, 0.5);
+    -moz-box-shadow: 4px 4px 10px rgba(0,0,0, 0.5);
+	box-shadow: 4px 4px 10px rgba(0,0,0, 0.5);
+}
+
+#cat_sidebar img
+{	
+	display: none;
+	width: 0px;
+	height: 0px;
+}
+
+#cat_sidebar li:first-child
+{	
+	margin :15px 0 0 15px;
+}
+
+#cat_sidebar li:last-child
+{	
+	margin :2px 0 15px 15px;
+}
+#cat_sidebar li
+{
+	margin-left: 15px;
+	margin: 2px 0 0 15px;
+}
+
+#cat_sidebar li.current-cat a
+{
+	color: #669ACC;
+}
+
+/*contact pagina*/
+.wpcf7-form
+{
+	margin-left: 50px;
+	margin-top: 40px;
 }
 
 /*footer part */

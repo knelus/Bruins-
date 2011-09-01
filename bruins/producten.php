@@ -9,14 +9,14 @@ get_header(); ?>
 <div id="block_content">
 	<div id="content_area" class="block">
 	<div id="cat_sidebar">
-	<?php echo wp_list_categories( 'echo=0&title_li=&depth=1&hide_empty=0' ); ?>
+	<?php echo wp_list_categories( 'echo=0&title_li=&depth=1&hide_empty=0&exclude=1' ); ?>
 	</div>
 	
 		<div class="product">
 				<div id="category_list">
 			<?php 
 						// Grab the categories - top level only (depth=1)
-			 $get_cats = wp_list_categories( 'echo=0&title_li=&depth=1&hide_empty=0' );
+			 $get_cats = wp_list_categories( 'echo=0&title_li=&depth=1&hide_empty=0&exclude=1' );
 			// Split into array items
 			 $cat_array = explode('</li>',$get_cats);
 			// Amount of categories (count of items in array)
