@@ -3,6 +3,10 @@ $count = 0;
 get_header(); ?>
 <div id="block_content">
 	<div id="content_area" class="block">
+	<div id="cat_sidebar">
+	<?php echo wp_list_categories( 'echo=0&title_li=&depth=1&hide_empty=0&exclude=1' ); ?>
+	</div>
+
 		<div class="block_inside">
 			<!-- the loop to get all the page info you want to load -->
 			<?php if(have_posts()) : while(have_posts()) : the_post();?>

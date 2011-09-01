@@ -12,7 +12,7 @@
 	<div id="header">
 		<img src="<?php bloginfo('template_directory'); ?>/images/header.png" alt="" style="width: 831px;"/>
 		<ul id="menu">
-			<?php wp_list_pages('echo=1&depth=0&title_li='); ?>
+			<?php wp_list_pages('echo=1&depth=0&title_li=&sort_collum=menu_order'); ?>
 		</ul>
 		<hr />
 	</div>
