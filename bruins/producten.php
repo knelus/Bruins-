@@ -9,7 +9,7 @@ get_header(); ?>
 <div id="block_content">
 	<div id="content_area" class="block">
 	<div id="cat_sidebar">
-	<?php echo wp_list_categories( 'echo=0&title_li=&depth=1&hide_empty=0&exclude=1' ); ?>
+	<?php echo wp_list_categories( 'echo=0&title_li=&depth=0&hide_empty=0&exclude=1' ); ?>
 	</div>
 	
 		<div class="product">
@@ -23,7 +23,7 @@ get_header(); ?>
 			 $results_total = count($cat_array);
 			// How many categories to show per list (round up total divided by 5)
 			 //$cats_per_list = ceil($results_total / 5);
-			 $cats_per_list =4;
+			 $cats_per_list =3;
 			// Counter number for tagging onto each list
 			 $list_number = 1;
 			// Set the category result counter to zero
@@ -50,7 +50,7 @@ get_header(); ?>
 				} ?> 
 				</ul>
 		</div>
-			
+
 		</div><!-- closing block_inside -->		
 <?php get_footer(); ?>
 

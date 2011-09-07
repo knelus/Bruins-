@@ -102,7 +102,7 @@ hr
 
 .block_inside
 {
-	min-height: 725px;
+	min-height: 625px;
 	padding-left: 50px;
 	padding-right: 50px;
 }	
@@ -114,7 +114,7 @@ hr
 
 .product
 {
-	min-height: 725px;
+	min-height: 525px;
 }
 
 .alignright
@@ -193,34 +193,61 @@ hr
 {
 	margin-left: -30px;
 	float: left;
+	height: 180px;
 	width: 750px;
 	margin-top: 15px;
 }
 
 .cat_post_left img
 {
+	font-size: 10px;
 	margin-top: -10px;
 	float: left;
 	border: none;
 }
 
+.cat_post_left h1
+{
+	font-size: 15px;
+	margin-left:  180px;
+}
+
 .cat_post_right
 {
+	text-align: right;
 	margin-right: -30px;
 	float: right;
+	height: 180px;
 	width: 750px;
 	margin-top: 15px;
+	background-color: #666;
+}
+
+.cat_post_right span:last-child
+{
+		clear:both;
+}
+
+.cat_post_left span:last-child
+{
+		clear:both;
 }
 
 .cat_post_right img
 {
-	margin-top: -10px;
+	margin-top: -23px;
  	float: right;
+}
+
+.cat_post_right h1
+{
+	font-size: 15px;
+	margin-right: 180px;
 }
 
 #category_list
 {
-	height: 900px;
+	height: 450px;
 }
 
 .category_footer_post 
@@ -304,7 +331,7 @@ img.category_icon
 	margin: 2px 0 0 15px;
 }
 
-#cat_sidebar li.current-cat a
+#cat_sidebar .current-cat a:first-child
 {
 	color: #669ACC;
 }
@@ -324,6 +351,7 @@ img.category_icon
 	width: 830px;
 	height: 150px;
 	list-style:none;
+	float:left;
 }
 
 #footer .widget_text table

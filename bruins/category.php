@@ -4,7 +4,7 @@ get_header(); ?>
 <div id="block_content">
 	<div id="content_area" class="block">
 	<div id="cat_sidebar">
-	<?php echo wp_list_categories( 'echo=0&title_li=&depth=1&hide_empty=0&exclude=1' ); ?>
+	<?php echo wp_list_categories( 'echo=0&title_li=&hide_empty=0&exclude=1' ); ?>
 	</div>
 
 		<div class="block_inside">
@@ -12,11 +12,13 @@ get_header(); ?>
 			<?php if(have_posts()) : while(have_posts()) : the_post();?>
 			<?php if($count % 2 == 0) { ?>
 				<span class="cat_post_left">
+					<h1><?php the_title(); ?></h1>
 					<?php the_content();?>
 				</span>
 			<?php } ?>
 			<?php if($count % 2 == 1) { ?>
 				<span class="cat_post_right">
+					<h1><?php the_title();?></h1>				
 					<?php the_content();?>
 				</span>
 			<?php } ?>
