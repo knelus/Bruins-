@@ -6,5 +6,6 @@
 				</div><!-- closing Footer -->				
 		</div><!-- closing content_area -->	
 	</div><!-- closing block_content -->
+<?php wp_footer(); ?>
 </body>
 </html>

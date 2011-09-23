@@ -15,7 +15,7 @@ get_header(); ?>
 		<div class="product">
 				<div id="category_list">
 			<?php 
-						// Grab the categories - top level only (depth=1)
+			// Grab the categories - top level only (depth=1)
 			 $get_cats = wp_list_categories( 'echo=0&title_li=&depth=1&hide_empty=0&exclude=1' );
 			// Split into array items
 			 $cat_array = explode('</li>',$get_cats);
