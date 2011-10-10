@@ -13,7 +13,7 @@ get_header(); ?>
 			<?php if($count % 2 == 0) { ?>
 				<span class="cat_post_left">
 					<h1><?php the_title(); ?></h1>
-					<?php the_content();?>
+					<?php the_content(); ?>
 				</span>
 			<?php } ?>
 			<?php if($count % 2 == 1) { ?>
